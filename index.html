@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect Four Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="icons8-tully-house-16.png" type="image/png">
+
+  <style>
+    .red-piece {
+      background: radial-gradient(circle at 30% 107%, #f44336, transparent);
+    }
+    .yellow-piece {
+      background: radial-gradient(circle at 30% 107%, #ffeb3b, transparent);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex flex-col justify-center items-center h-screen">
+  <h1 class="font-semibold text-4xl text-green-700 shadow-md mt-5">Connect Four</h1>
+  <h2 id="winner" class="font-semibold text-2xl text-green-600 shadow-md mb-5"></h2>
+  <div id="board" class="h-[540px] w-[630px] bg-gradient-to-b from-green-500 to-green-700 border-8 border-green-700 rounded-lg flex flex-wrap shadow-lg"></div>
+  <script src="script.js"></script>
+</body>
+</html>
